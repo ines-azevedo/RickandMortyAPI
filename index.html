@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>    
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" href="API_consulta.css">
+    <title>Rick and Morty</title>
+
+</head>
+
+<body>
+    <br><br><br><br><br><br><br><br>
+
+    <div>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1200px-Rick_and_Morty.svg.png" alt="Logo">
+    </div>
+
+    <h2>“Wubba Lubba Dub Dub!” — Rick Sanchez</h2>
+    
+    <br><br><br>
+
+    <div>
+        <div class="dropdown" style="float:center;">
+            <button class="dropbtn">Sort by</button>
+            <div class="dropdown-content" style="left:0;">
+                <a href="#" id="asc">A-Z</a>
+                <a href="#" id="desc">Z-A</a>
+            </div>
+        </div>
+
+        <div class="dropdown3" style="float:center;">
+            <button class="dropbtn3">Status</button>
+            <div class="dropdown-content3" style="left:0;">
+                <a href="#" id="alive">Alive</a>
+                <a href="#" id="dead">Dead</a>
+                <a href="#" id="unknown-status">Unknown</a>
+            </div>
+        </div>
+
+        <div class="dropdown2" style="float:center;">
+            <button class="dropbtn2">Species</button>
+            <div class="dropdown-content2" style="left:0;">
+                <a href="#" id="alien">Alien</a>
+                <a href="#" id="animal">Animal</a>
+                <a href="#" id="cronenberg">Cronenberg</a>
+                <a href="#" id="disease">Disease</a>
+                <a href="#" id="human">Human</a>
+                <a href="#" id="humanoid">Humanoid</a>
+                <a href="#" id="mythological-creature">Mythological Creature</a>
+                <a href="#" id="poopybutthole">Poopybutthole</a>
+                <a href="#" id="robot">Robot</a>
+                <a href="#" id="unknown-species">Unknown</a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="search" style="float:center;">
+            <input type="text" placeholder="Search..." name="" id="find" onkeyup="search()">
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <div class="container">
+            <ul data-js="rickandmorty" class="rickandmorty"></ul>
+          </div>
+    </div>
+
+<script src="API_consulta.js"></script>
+
+</body>
+
+</html>
